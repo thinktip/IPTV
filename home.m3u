@@ -7,9 +7,9 @@ http://192.168.2.5:8888/udp/239.253.246.232:8000
 http://192.168.2.5:8888/udp/239.253.246.191:8000
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视频道",CCTV-4国际
 http://192.168.2.5:8888/udp/239.253.246.111:8000
-#EXTINF:-1 tvg-id="22" tvg-name="CCTV4EUO" tvg-logo="http://192.168.2.253:88/tvlogo/cctv4euo.png" group-title="央视频道",CCTV-4欧洲
+#EXTINF:-1 tvg-id="22" tvg-name="CCTV4EUO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d4/CCTV-4_Europe.png" group-title="央视频道",CCTV-4欧洲
 http://192.168.2.5:8888/udp/239.253.246.186:8000
-#EXTINF:-1 tvg-id="23" tvg-name="CCTV4AME" tvg-logo="http://192.168.2.253:88/tvlogo/cctv4ame.png" group-title="央视频道",CCTV-4美洲
+#EXTINF:-1 tvg-id="23" tvg-name="CCTV4AME" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0d/CCTV-4_America.png" group-title="央视频道",CCTV-4美洲
 http://192.168.2.5:8888/udp/239.253.246.187:8000
 #EXTINF:-1 tvg-id="5" tvg-name="CCTV5" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视频道",CCTV-5体育
 http://192.168.2.5:8888/udp/239.253.246.192:8000
