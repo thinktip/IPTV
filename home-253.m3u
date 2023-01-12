@@ -169,7 +169,7 @@ http://192.168.2.253:4022/udp/239.253.246.189:8000
 http://192.168.2.253:4022/udp/239.253.246.101:8000
 #EXTINF:-1 tvg-id="8809" tvg-name="IPTV4K2" tvg-logo="" group-title="4K超高清",IPTV 爱上4K
 http://192.168.2.253:4022/udp/239.253.246.102:8000
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K 01
+#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K
 http://159.75.85.63:5679/cctv4k.php
 #EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K BestV
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/cctv4k/15000000/mnf.m3u8
