@@ -175,9 +175,9 @@ http://159.75.85.63:5679/cctv4k.php
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/cctv4k/15000000/mnf.m3u8
 #EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K 50P HLG
 http://159.75.85.63:5681/sxg.php?id=ys4Kcq_2000
-#EXTINF:-1,tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://epg.112114.xyz/logo/CCTV16.png" group-title="4K超高清", CCTV奥林匹克频道 01
+#EXTINF:-1,tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://epg.112114.xyz/logo/CCTV16.png" group-title="4K超高清", CCTV奥林匹克频道
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/cctv16hd4k/15000000/mnf.m3u8
-#EXTINF:-1 tvg-name="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="4K超高清", CCTV奥林匹克频道 02
+#EXTINF:-1 tvg-name="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="4K超高清", CCTV奥林匹克频道 50P HLG
 http://159.75.85.63:5681/sxg.php?id=CCTV-16-4K_8000
 #EXTINF:-1 tvg-name="BTV纪实科教-8KSDR源" tvg-logo="https://cdn.jsdelivr.net/gh/youshandefeiyang/IPTV/logo/6b43dea36f823761380072013ab25d1594f58aad.jpg" group-title="4K超高清",BTV纪实科教-8KSDR源
 http://111.62.156.15/downlive.brtvcloud.com/8krongmei1502/1502rongmeike8k.m3u8
