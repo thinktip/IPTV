@@ -41,11 +41,13 @@ http://159.75.85.63:5681/sxg.php?id=CCTV-16-4K_8000
 http://192.168.2.5:8888/udp/239.253.246.168:8000
 #EXTINF:-1 tvg-id="0" tvg-name="CCTV-4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="央视频道",CCTV-4K超高清
 http://192.168.2.5:8888/udp/239.253.246.122:8000
+
+
 #EXTINF:-1 tvg-id="40" tvg-name="重庆卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/chongqing.png" group-title="卫视频道",重庆卫视频道
 http://192.168.2.5:8888/udp/239.253.246.38:8000
 #EXTINF:-1 tvg-id="50" tvg-name="江西卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jiangxi.png" group-title="卫视频道",江西卫视频道
 http://192.168.2.5:8888/udp/239.253.246.47:8000
-#EXTINF:-1 tvg-id="38" tvg-name="山东卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="卫视频道",山东地方卫视频道
+#EXTINF:-1 tvg-id="38" tvg-name="山东卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="卫视频道",山东卫视频道
 http://192.168.2.5:8888/udp/239.253.246.78:8000
 #EXTINF:-1 tvg-id="27" tvg-name="湖南卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843242637.png" group-title="卫视频道",湖南卫视频道
 http://192.168.2.5:8888/udp/239.253.246.82:8000
@@ -85,6 +87,8 @@ http://192.168.2.5:8888/udp/239.253.246.176:8000
 http://192.168.2.5:8888/udp/239.253.246.179:8000
 #EXTINF:-1 tvg-id="56" tvg-name="四川卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/sichuan.png" group-title="卫视频道",四川卫视频道
 http://192.168.2.5:8888/udp/239.253.246.180:8000
+
+
 #EXTINF:-1 tvg-id="1428" tvg-name="山东地方体育" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="山东地方",山东地方体育
 http://192.168.2.5:8888/udp/239.253.246.22:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="山东地方",山东地方新闻
@@ -102,9 +106,13 @@ http://192.168.2.5:8888/udp/239.253.246.151:8000
 #EXTINF:-1 tvg-id="1433" tvg-name="山东地方综艺" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="山东地方",山东地方综艺
 http://192.168.2.5:8888/udp/239.253.246.159:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="山东地方",山东地方文旅
-
-
 http://192.168.2.5:8888/udp/239.253.246.160:8000
+
+
+#EXTINF:-1 tvg-id="" tvg-name="IPTV 4K 影视" tvg-logo="" group-title="IPTV 频道",IPTV 4K 影视
+http://192.168.2.5:8888/udp/239.253.246.101:8000
+#EXTINF:-1 tvg-id="" tvg-name="爱上4K" tvg-logo="" group-title="IPTV 频道",IPTV 爱上4K
+http://192.168.2.5:8888/udp/239.253.246.102:8000
 #EXTINF:-1 tvg-id="6555" tvg-name="梨园" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/CCTVPAYFEE20.jpg" group-title="IPTV 频道",河南梨园频道
 http://192.168.2.5:8888/udp/239.253.246.71:8000
 #EXTINF:-1 tvg-id="6586" tvg-name="武术世界" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/WUSHUSHIJIE.jpg" group-title="IPTV 频道",河南武术世界
@@ -161,69 +169,3 @@ http://192.168.2.5:8888/udp/239.253.246.185:8000
 http://192.168.2.5:8888/udp/239.253.246.188:8000
 #EXTINF:-1 tvg-id="20" tvg-name="CGTN" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/cgtn.png" group-title="特色频道",CGTN
 http://192.168.2.5:8888/udp/239.253.246.189:8000
-
-
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K
-http://159.75.85.63:5679/cctv4k.php
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K 50PHDR
-http://159.75.85.63:5681/sxg.php?id=ys4Kcq_2000
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="4K超高清",CCTV4K 50PSDR
-http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221226998/index.m3u8?servicetype=1
-#EXTINF:-1 tvg-id="7249" tvg-name="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="4K超高清", CCTV奥林匹克频道 50P HLG
-http://159.75.85.63:5681/sxg.php?id=CCTV-16-4K_8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="4K超高清",IPTV 4K 影视
-http://192.168.2.5:8888/udp/239.253.246.101:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="4K超高清",IPTV 爱上4K
-http://192.168.2.5:8888/udp/239.253.246.102:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://cdn.jsdelivr.net/gh/youshandefeiyang/IPTV/logo/6b43dea36f823761380072013ab25d1594f58aad.jpg" group-title="4K超高清",BTV纪实科教-8KSDR源
-http://111.62.156.15/downlive.brtvcloud.com/8krongmei1502/1502rongmeike8k.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://cdn.jsdelivr.net/gh/youshandefeiyang/IPTV/logo/suzhou4k.png" group-title="4K超高清",苏州4K
-http://liveshowbak2.kan0512.com/ksz-norecord/csztv4k_4k.m3u8
-#EXTINF:-1 tvg-id="1977" tvg-name="欢笑剧场" tvg-logo="https://cdn.jsdelivr.net/gh/youshandefeiyang/IPTV/logo/592C8D88-DA83-41ED-8824-E2E2E54E396C.png" group-title="4K超高清",欢笑剧场4K
-http://159.75.85.63:5681/sxg.php?id=hxjc-4k_8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://cdn.jsdelivr.net/gh/youshandefeiyang/IPTV/logo/suzhou4k.png" group-title="4K超高清",8K风光 v6
-http://[2409:8087:2001:20:2800:0:df6e:eb04]/wh7f454c46tw1782571424_-1576923679/ott.mobaibox.com/PLTV/3/224/3221228132/index.m3u8?icpid=3&RTS=1674188624&from=40&popid=40&hms_devid=2041&prioritypopid=40&vqe=3
-
-
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="IPv6 综合",CCTV1 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001331/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="2" tvg-name="CCTV2" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="IPv6 综合",CCTV2 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001332/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="IPv6 综合",CCTV4 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001333/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="6" tvg-name="CCTV5+" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5+.png" group-title="IPv6 综合",CCTV5+ HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001334/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="29" tvg-name="江苏卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jiangsu.png" group-title="IPv6 综合",江苏卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001344/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="31" tvg-name="东方卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/dongfang.png" group-title="IPv6 综合",东方卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001336/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="30" tvg-name="北京卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" group-title="IPv6 综合",北京卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001335/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="39" tvg-name="天津卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/tianjin.png" group-title="IPv6 综合",天津卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001343/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="32" tvg-name="安徽卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/anhui.png" group-title="IPv6 综合",安徽卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001346/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="38" tvg-name="山东地方卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/shandong.png" group-title="IPv6 综合",山东地方卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001341/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="33" tvg-name="广东卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/guangdong.png" group-title="IPv6 综合",广东卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001337/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="29" tvg-name="江苏卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jiangsu.png" group-title="IPv6 综合",江苏卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001344/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="34" tvg-name="深圳卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/shenzhen.png" group-title="IPv6 综合",深圳卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001342/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="48" tvg-name="湖北卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/hubei.png" group-title="IPv6 综合",湖北卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001347/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="27" tvg-name="湖南卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/hunan.png" group-title="IPv6 综合",湖南卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001339/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="36" tvg-name="辽宁卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/liaoning.png" group-title="IPv6 综合",辽宁卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001340/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="46" tvg-name="黑龙江卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/heilongjiang.png" group-title="IPv6 综合",黑龙江卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001338/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="32" tvg-name="安徽卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/anhui.png" group-title="IPv6 综合",安徽卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001346/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="28" tvg-name="浙江卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/zhejiang.png" group-title="IPv6 综合",浙江卫视频道 HD16M
-http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001345/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
-#EXTINF:-1 tvg-id="106" tvg-name="CCTV4K" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" group-title="IPv6 综合",CCTV-4K 4K15MSDR
-http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221226998/index.m3u8?servicetype=1
-#EXTINF:-1 tvg-id="7249" tvg-name="CCTV16" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="IPv6 综合",CCTV-16 4K25MSDR
-http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221227162/index.m3u8?servicetype=1
