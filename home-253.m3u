@@ -45,7 +45,7 @@ http://192.168.2.5:8888/udp/239.253.246.122:8000
 http://192.168.2.5:8888/udp/239.253.246.38:8000
 #EXTINF:-1 tvg-id="50" tvg-name="江西卫视频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jiangxi.png" group-title="卫视频道",江西卫视频道
 http://192.168.2.5:8888/udp/239.253.246.47:8000
-#EXTINF:-1 tvg-id="38" tvg-name="山东地方卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="卫视频道",山东地方卫视频道
+#EXTINF:-1 tvg-id="38" tvg-name="山东卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843582324.png" group-title="卫视频道",山东地方卫视频道
 http://192.168.2.5:8888/udp/239.253.246.78:8000
 #EXTINF:-1 tvg-id="27" tvg-name="湖南卫视频道" tvg-logo="http://test.kkapp.com/image/channellogo/1384843242637.png" group-title="卫视频道",湖南卫视频道
 http://192.168.2.5:8888/udp/239.253.246.82:8000
