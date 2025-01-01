@@ -109,6 +109,8 @@ http://192.168.2.5:8888/udp/239.253.246.159:8000
 http://192.168.2.5:8888/udp/239.253.246.160:8000
 
 
+#EXTINF:-1 tvg-id="" tvg-name="动漫秀场" tvg-logo="" group-title="IPTV 频道",动漫秀场
+http://192.168.2.5:8888/udp/239.253.246.115:8000
 #EXTINF:-1 tvg-id="" tvg-name="IPTV 4K 影视" tvg-logo="" group-title="IPTV 频道",IPTV 4K 影视
 http://192.168.2.5:8888/udp/239.253.246.101:8000
 #EXTINF:-1 tvg-id="" tvg-name="爱上4K" tvg-logo="" group-title="IPTV 频道",IPTV 爱上4K
