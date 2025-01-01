@@ -123,19 +123,19 @@ http://192.168.2.5:8888/udp/239.253.246.73:8000
 http://192.168.2.5:8888/udp/239.253.246.74:8000
 #EXTINF:-1 tvg-id="1988" tvg-name="上海纪实" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/shanghaijishi.png" group-title="IPTV 频道",纪实人文
 http://192.168.2.5:8888/udp/239.253.246.81:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV高清1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",东方财经
 http://192.168.2.5:8888/udp/239.253.246.94:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV高清2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",法制天地
 http://192.168.2.5:8888/udp/239.253.246.96:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV高清3
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",乐游
 http://192.168.2.5:8888/udp/239.253.246.97:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV高清4
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",都市剧场
 http://192.168.2.5:8888/udp/239.253.246.98:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV高清5
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",生活时尚
 http://192.168.2.5:8888/udp/239.253.246.99:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV4K影视
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",金色学堂
 http://192.168.2.5:8888/udp/239.253.246.101:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",IPTV爱上4K
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="IPTV 频道",爱上4K
 http://192.168.2.5:8888/udp/239.253.246.102:8000
 #EXTINF:-1 tvg-id="2025" tvg-name="金鹰纪实" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jinyingjishi.png" group-title="IPTV 频道",金鹰纪实
 http://192.168.2.5:8888/udp/239.253.246.103:8000
