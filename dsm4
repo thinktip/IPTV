@@ -1,0 +1,148 @@
+#!/bin/sh
+
+# ==============================================================================
+# DSM 7.2 CPU Info Changer for AMD Ryzen 3 2200G (v1.1 - Corrected)
+#
+# 免责声明:
+# 这个脚本会修改您 Synology DSM 的系统文件。
+# 请在执行前了解其功能，并自行承担风险。
+# 脚本已创建备份，但强烈建议您在执行前手动备份重要数据。
+# ==============================================================================
+
+clear
+echo "============================================================"
+echo "    DSM 7.2 CPU 信息修改脚本 (v1.1 - 已修正 sed 错误)    "
+echo "============================================================"
+echo
+
+# --- 配置区 ---
+# 您想要显示的 CPU 信息
+CPU_VENDOR="AMD"
+CPU_FAMILY="Ryzen 3"
+CPU_SERIES="2200G with Radeon Vega Graphics"
+CPU_CORES="4 Cores / 4 Threads" # 2200G 是 4核/4线程
+
+# 点击 "detail" 后的跳转链接
+CPU_DETAIL_URL="https://www.amd.com/en/products/apu/amd-ryzen-3-2200g"
+CPU_DETAIL="<a href='${CPU_DETAIL_URL}' target=_blank>detail</a>"
+
+# DSM 7.x 系统文件路径
+ADMIN_JS_GZ="/usr/syno/synoman/webman/modules/AdminCenter/admin_center.js.gz"
+MOBILE_JS_GZ="/usr/syno/synoman/mobile/ui/mobile.js.gz"
+
+# 备份与工作目录
+BACKUP_DIR="/root/cpu_info_backup_$(date +%Y%m%d_%H%M%S)"
+WORK_DIR="/tmp/cpu_info_work_$$" # 使用PID确保临时目录唯一
+
+# DSM 7.x 使用的 JavaScript 对象变量名
+dt='t'
+
+# --- 脚本主体 ---
+
+# 1. 权限检查
+if [ "$(id -u)" -ne 0 ]; then
+   echo "错误：请以 root 用户身份运行此脚本。" >&2
+   exit 1
+fi
+
+# 2. 文件存在性检查
+if [ ! -f "$ADMIN_JS_GZ" ] || [ ! -f "$MOBILE_JS_GZ" ]; then
+    echo "错误：找不到目标文件。"
+    echo "请确认您的 DSM 版本为 7.x，并且路径正确："
+    echo "- $ADMIN_JS_GZ"
+    echo "- $MOBILE_JS_GZ"
+    exit 1
+fi
+
+echo "检测到目标文件，准备开始修改..."
+echo
+
+# 3. 创建备份
+echo "[1/5] 正在备份原始文件..."
+mkdir -p "$BACKUP_DIR"
+if [ $? -ne 0 ]; then
+    echo "错误：无法创建备份目录 $BACKUP_DIR。"
+    exit 1
+fi
+cp "$ADMIN_JS_GZ" "$BACKUP_DIR/"
+cp "$MOBILE_JS_GZ" "$BACKUP_DIR/"
+echo "备份已成功创建于: $BACKUP_DIR"
+echo
+
+# 4. 准备工作文件
+mkdir -p "$WORK_DIR"
+cp "$ADMIN_JS_GZ" "$WORK_DIR/"
+cp "$MOBILE_JS_GZ" "$WORK_DIR/"
+gunzip "$WORK_DIR/admin_center.js.gz"
+gunzip "$WORK_DIR/mobile.js.gz"
+ADMIN_JS_WORK="$WORK_DIR/admin_center.js"
+MOBILE_JS_WORK="$WORK_DIR/mobile.js"
+
+# 5. 检查是否已修改
+if grep -q "2200G with Radeon Vega Graphics" "$ADMIN_JS_WORK"; then
+    echo "警告：脚本似乎已经运行过。检测到已修改的CPU信息。"
+    echo "为防止重复修改，脚本已终止。"
+    echo "如果您确实需要重新运行，请先从备份目录恢复原始文件。"
+    echo "恢复命令示例: "
+    echo "cp ${BACKUP_DIR}/admin_center.js.gz ${ADMIN_JS_GZ}"
+    echo "cp ${BACKUP_DIR}/mobile.js.gz ${MOBILE_JS_GZ}"
+    rm -r "$WORK_DIR"
+    exit 1
+fi
+
+echo "[2/5] 正在修改 JavaScript 文件..."
+
+# --- 修改 admin_center.js ---
+# 构造要注入的JS代码
+CPU_INFO_ADMIN="${dt}.cpu_vendor=\\\"${CPU_VENDOR}\\\",${dt}.cpu_family=\\\"${CPU_FAMILY}\\\",${dt}.cpu_series=\\\"${CPU_SERIES}\\\",${dt}.cpu_cores=\\\"${CPU_CORES}\\\",${dt}.cpu_detail=\\\"${CPU_DETAIL}\\\","
+
+# 【已修正】注入CPU信息变量，将分隔符从 / 改为 #
+sed -i "s#Ext.isDefined(${dt}.cpu_vendor)#${CPU_INFO_ADMIN}Ext.isDefined(${dt}.cpu_vendor)#g" "${ADMIN_JS_WORK}"
+
+# 添加 'detail' 链接到信息面板的显示项中 (此行没有特殊字符，无需修改)
+sed -i "s/${dt}.cpu_series)])/${dt}.cpu_series,${dt}.cpu_detail)])/g" "${ADMIN_JS_WORK}"
+
+# --- 修改 mobile.js ---
+# 构造用于移动视图的JS代码块
+CPU_INFO_MOBILE="{name: \\\"cpu_series\\\",renderer: function(value){var cpu_vendor=\\\"${CPU_VENDOR}\\\";var cpu_family=\\\"${CPU_FAMILY}\\\";var cpu_series=\\\"${CPU_SERIES}\\\";var cpu_cores=\\\"${CPU_CORES}\\\";return Ext.String.format('{0} {1} {2} [ {3} ]', cpu_vendor, cpu_family, cpu_series, cpu_cores);},label: _T(\\\"status\\\", \\\"cpu_model_name\\\")},"
+
+# 【已修正】寻找 `ds_model` 项并在其后插入新的CPU信息块，将分隔符从 / 改为 #
+sed -i "s#\"ds_model\")},#\"ds_model\")},${CPU_INFO_MOBILE}#" "${MOBILE_JS_WORK}"
+
+
+echo "文件修改成功。"
+echo
+
+# 6. 压缩并替换原文件
+echo "[3/5] 正在压缩修改后的文件..."
+gzip -f "${ADMIN_JS_WORK}"
+gzip -f "${MOBILE_JS_WORK}"
+echo
+
+echo "[4/5] 正在应用更改..."
+mv "${ADMIN_JS_WORK}.gz" "${ADMIN_JS_GZ}"
+mv "${MOBILE_JS_WORK}.gz" "${MOBILE_JS_GZ}"
+echo
+
+# 7. 清理
+echo "[5/5] 正在清理临时文件..."
+rm -r "$WORK_DIR"
+echo
+
+# --- 完成 ---
+echo "============================================================"
+echo "                      🎉 操作成功完成！ 🎉"
+echo "============================================================"
+echo
+echo "重要提示:"
+echo "1. 请清除您的浏览器缓存，然后刷新DSM网页界面 (按 Ctrl+F5 或 Command+R)。"
+echo "   或者，您也可以退出DSM后重新登录以查看更改。"
+echo
+echo "2. 原始文件已备份至:"
+echo "   $BACKUP_DIR"
+echo
+echo "3. 如果出现任何问题，您可以使用以下命令从备份中恢复："
+echo "   cp ${BACKUP_DIR}/admin_center.js.gz ${ADMIN_JS_GZ}"
+echo "   cp ${BACKUP_DIR}/mobile.js.gz ${MOBILE_JS_GZ}"
+echo "   恢复后，同样需要刷新浏览器缓存或重新登录DSM。"
+echo
